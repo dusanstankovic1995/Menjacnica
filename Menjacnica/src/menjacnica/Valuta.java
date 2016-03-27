@@ -108,22 +108,19 @@ public class Valuta {
 				return false;
 		} else if (!datum.equals(other.datum))
 			return false;
-		if (Double.doubleToLongBits(kupovniKurs) != Double.doubleToLongBits(other.kupovniKurs))
-			return false;
+
 		if (naziv == null) {
 			if (other.naziv != null)
 				return false;
 		} else if (!naziv.equals(other.naziv))
 			return false;
-		if (Double.doubleToLongBits(prodajniKurs) != Double.doubleToLongBits(other.prodajniKurs))
-			return false;
+
 		if (skraceniNaziv == null) {
 			if (other.skraceniNaziv != null)
 				return false;
 		} else if (!skraceniNaziv.equals(other.skraceniNaziv))
 			return false;
-		if (Double.doubleToLongBits(srednjiKurs) != Double.doubleToLongBits(other.srednjiKurs))
-			return false;
+
 		return true;
 	}
 

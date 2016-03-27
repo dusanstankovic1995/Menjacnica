@@ -32,9 +32,9 @@ public class Menjacnica implements MenjacnicaInterfejs {
 
 		for (int i = 0; i < kursevi.size(); i++) {
 			if (kursevi.get(i).equals(v)) {
-				kursevi.get(i).setProdajniKurs(0);
-				kursevi.get(i).setSrednjiKurs(0);
-				kursevi.get(i).setKupovniKurs(0);
+
+				kursevi.remove(i);
+
 			}
 			break;
 		}
@@ -57,6 +57,8 @@ public class Menjacnica implements MenjacnicaInterfejs {
 				kurs[1] = kursevi.get(i).getSrednjiKurs();
 				kurs[2] = kursevi.get(i).getKupovniKurs();
 			}
+
+			break;
 
 		}
 		return kurs;
